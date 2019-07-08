@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">Cassaforte</string>
+
+    <string name="btn_authenticate">Login</string>
+
+    <string name="biometric_title">Login</string>
+    <string name="biometric_subtitle">Login con sistema biometrico</string>
+    <string name="biometric_description">utilizza l\'impronta digitale per verificare la tua identità</string>
+    <string name="biometric_negative_button_text">CANCEL</string>
+
+
+    <string name="biometric_error_sdk_not_supported">Sdk version not supported</string>
+    <string name="biometric_error_hardware_not_supported">il Device non supporta l\'autenticazione biometrica</string>
+    <string name="biometric_error_fingerprint_not_available">Nessun impronta digitale è registrata sul device</string>
+    <string name="biometric_error_permission_not_granted">l\'utente non ha concesso il Permesso all\'uso del fingerprint</string>
+    <string name="biometric_failure">Login Fallito!</string>
+    <string name="biometric_cancelled">Authentication cancelled by user</string>
+    <string name="biometric_success">Login effettuato con successo </string>
+
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Cassaforte</string>
+    <string name="nav_header_subtitle">powered by L.A. Studio</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="pwpersonale">Password Personali</string>
+
+    <string name="pwfinanza">Password Finanziarie</string>
+
+    <string name="pwBancheDati">Password Banche Dati</string>
+
+    <string name="pwGestori">Password Gestori Telefonici</string>
+
+    <string name="pwlavoro">Password Aziendali</string>
+
+    <string name="textEmail">E_mail</string>
+
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="btnPhoto">Fotocamera</string>
+
+    <string name="btnGallery">Galleria Immagini</string>
+
+    <string name="cannot">Cannot</string>
+
+    <string name="album_name">Cassaforte</string>
+
+    <!-- Strings related to login -->
+
+
+    <string name="prompt_email">Email</string>
+
+    <string name="prompt_password">Password (optional)</string>
+
+    <string name="action_sign_in">Sign in or register</string>
+
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="error_invalid_email">This email address is invalid</string>
+
+    <string name="error_invalid_password">This password is too short</string>
+
+    <string name="error_incorrect_password">This password is incorrect</string>
+
+    <string name="error_field_required">This field is required</string>
+
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions." </string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="application_name">FingerprintDialog</string>
+    <string name="cancel">Cancel</string>
+    <string name="use_password">Use password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="ok">OK</string>
+    <string name="password">Password</string>
+    <string name="fingerprint_description">Confirm fingerprint to continue</string>
+    <string name="fingerprint_hint">Touch sensor</string>
+    <string name="password_description">Enter your store password to continue</string>
+    <string name="purchase">Purchase</string>
+    <string name="purchase_not_invalidated">Purchase not invalidated</string>
+    <string name="purchase_button_not_invalidated_description">
+        You can proceed to purchase with this button \n even if a new fingerprint is enrolled
+    </string>
+    <string name="fingerprint_not_recognized">Fingerprint not recognized. Try again</string>
+    <string name="fingerprint_success">Fingerprint recognized</string>
+    <string name="item_title">White Mesh Pluto Backpack</string>
+    <string name="item_price">$62.68</string>
+    <string name="item_description">Mesh backpack in white. Black textile trim throughout.</string>
+    <string name="purchase_done">Purchase successful</string>
+    <string name="new_fingerprint_enrolled_description">A new fingerprint was added to this device, so your password is required.</string>
+    <string name="use_fingerprint_in_future">Use fingerprint in the future</string>
+    <string name="use_fingerprint_to_authenticate_title">Use fingerprint to authenticate</string>
+    <string name="use_fingerprint_to_authenticate_key">use_fingerprint_to_authenticate_key</string>
+    <string name="description_bugdroid_icon">Android bugdroid image</string>
+    <string name="description_fingerprint_icon">Fingerprint icon</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_choose_app_pers">ChooseAppPers</string>
+    <string name="biometric_failed">login failed</string>
+    <string name="activity_cambia_pw">Cambia Password</string>
+    <string name="activity_crea_icona">Crea Icona</string>
+    <string name="activity_pw_personali">Passwords Personali</string>
+    <string name="activity_pw_finanziarie">Passwords Finanziaria</string>
+    <string name="activity_pw_lavoro">Password Aziendali</string>
+    <string name="nome_utente">Nome Utente</string>
+    <string name="vecchia_password">vecchia password</string>
+    <string name="nuova_password">nuova password</string>
+    <string name="ridigita_nuova_password">ridigita nuova password</string>
+    <string name="invia">Invia</string>
+    <string name="e_mail_utente">e-mail</string>
+    <string name="reinserisci_password">reinserisci password</string>
+    <string name="registrami">Registrami</string>
+    <string name="nome_applicazione">NOME APPLICAZIONE</string>
+    <string name="titolo_nome_utente">NOME UTENTE</string>
+    <string name="titolo_password">PASSWORD</string>
+    <string name="titolo_pin">PIN</string>
+    <string name="titolo_2_pin">2^ PIN</string>
+    <string name="titolo_url">URL</string>
+    <string name="titolo_i_b_a_n">I.B.A.N.</string>
+    <string name="titolo_nr_carta">NR. CARTA - CIN / Scadenza</string>
+    <string name="titolo_codice_bancomat">Codice Bancomat</string>
+    <string name="titolo_e_mail">E-mail</string>
+    <string name="titolo_banca">Banca</string>
+    <string name="titolo_note">NOTE</string>
+    <string name="titolo_iban">IBAN</string>
+    <string name="crea_icona">Crea Icona</string>
+
+</resources>

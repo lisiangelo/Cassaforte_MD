@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:overScrollMode="always">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titolo_banca"
+        android:textColor="@android:color/white"
+        android:id="@+id/rownome_banca_label"
+        android:layout_alignParentLeft="true"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rownome_banca"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/rownome_banca_label"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titolo_i_b_a_n"
+        android:textColor="@android:color/white"
+        android:id="@+id/rowiban_label"
+        android:layout_below="@+id/rownome_banca"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowiban"
+        android:textColor="@android:color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rowiban_label"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titolo_nome_utente"
+        android:textColor="@android:color/white"
+        android:id="@+id/rowfnome_utente_label"
+        android:layout_below="@+id/rowiban"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowfnome_utente"
+        android:textColor="@android:color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rowfnome_utente_label"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titolo_password"
+        android:textColor="@android:color/white"
+        android:id="@+id/rowfpassword_label"
+        android:layout_below="@+id/rowfnome_utente"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowfpassword"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/rowfpassword_label"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titolo_pin"
+        android:textColor="@android:color/white"
+        android:id="@+id/rowfpin_label"
+        android:layout_below="@+id/rowfpassword"        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowfpin"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/rowfpin_label"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titolo_nr_carta"
+        android:textColor="@android:color/white"
+        android:id="@+id/rowf_pin2_label"
+        android:layout_below="@+id/rowfpin" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowf_pin2"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/rowf_pin2_label"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titolo_codice_bancomat"
+        android:textColor="@android:color/white"
+        android:id="@+id/rowbancomat_label"
+        android:layout_below="@+id/rowf_pin2"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowbancomat"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/rowbancomat_label"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titolo_note"
+        android:id="@+id/rowfnote_label"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/rowbancomat" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowfnote"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/rowfnote_label"/>
+
+</RelativeLayout>
+    </ScrollView>
+    <android.support.design.widget.BottomNavigationView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        app:menu="@menu/bottom_navigation_item_mod_pw" />
+
+</RelativeLayout>

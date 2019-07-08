@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/sfondo_grey">
+
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nome_applicazione"
+                android:textColor="@android:color/white"
+                android:id="@+id/nome_applicazionenewPer_label"
+                android:layout_alignParentLeft="true" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nome_applicazionenewPer"
+                android:inputType="text"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/nome_applicazionenewPer_label"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titolo_e_mail"
+                android:textColor="@android:color/white"
+                android:id="@+id/email_labelnewPer"
+                android:layout_below="@+id/nome_applicazionenewPer"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailnewPer"
+                android:textColor="@android:color/white"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/email_labelnewPer"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titolo_nome_utente"
+                android:textColor="@android:color/white"
+                android:id="@+id/nome_utentenewPer_label"
+                android:layout_below="@+id/emailnewPer"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nome_utentenewPer"
+                android:textColor="@android:color/white"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/nome_utentenewPer_label"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titolo_password"
+                android:textColor="@android:color/white"
+                android:id="@+id/passwordnewPer_label"
+                android:layout_below="@+id/nome_utentenewPer"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passwordnewPer"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/passwordnewPer_label"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titolo_pin"
+                android:textColor="@android:color/white"
+                android:id="@+id/pinnewPer_label"
+                android:layout_below="@+id/passwordnewPer" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pinnewPer"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/pinnewPer_label"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titolo_url"
+                android:textColor="@android:color/white"
+                android:id="@+id/urlnewPer_label"
+                android:layout_below="@+id/pinnewPer" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/urlnewPer"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/urlnewPer_label"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titolo_note"
+                android:textColor="@android:color/white"
+                android:id="@+id/notenewPer_label"
+                android:layout_below="@+id/urlnewPer" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/notenewPer"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/notenewPer_label"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <android.support.design.widget.BottomNavigationView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        app:menu="@menu/bottom_navigation_item_new_pw" />
+
+</RelativeLayout>

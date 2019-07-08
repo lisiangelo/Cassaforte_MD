@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/sfondo_grey"
+    android:paddingTop="@dimen/activity_vertical_margin">
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nome_applicazione"
+                android:textColor="@android:color/white"
+                android:id="@+id/nome_applicazionenewFin_label"
+                android:layout_alignParentLeft="true"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nome_applicazionenewFin"
+                android:inputType="text"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/nome_applicazionenewFin_label"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titolo_i_b_a_n"
+                android:textColor="@android:color/white"
+                android:id="@+id/ibannewFin_label"
+                android:layout_below="@+id/nome_applicazionenewFin"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ibannewFin"
+                android:layout_below="@+id/ibannewFin_label"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titolo_nome_utente"
+                android:textColor="@android:color/white"
+                android:id="@+id/nome_utentenewFin_label"
+                android:layout_below="@+id/ibannewFin"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nome_utentenewFin"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/nome_utentenewFin_label"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titolo_password"
+                android:textColor="@android:color/white"
+                android:id="@+id/passwordnewFin_label"
+                android:layout_below="@+id/nome_utentenewFin"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passwordnewFin"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/passwordnewFin_label"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titolo_pin"
+                android:textColor="@android:color/white"
+                android:id="@+id/pinnewFin_label"
+                android:layout_below="@+id/passwordnewFin" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pinnewFin"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/pinnewFin_label"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titolo_nr_carta"
+                android:textColor="@android:color/white"
+                android:id="@+id/_pin2newFin_label"
+                android:layout_below="@+id/pinnewFin" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/_pin2newFin"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/_pin2newFin_label"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titolo_codice_bancomat"
+                android:textColor="@android:color/white"
+                android:id="@+id/codiceBancomatnewFin_label"
+                android:layout_below="@+id/_pin2newFin" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/codiceBancomatnewFin"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/codiceBancomatnewFin_label"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titolo_note"
+                android:id="@+id/notenewFin_label"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/codiceBancomatnewFin" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/notenewFin"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/notenewFin_label"/>
+
+        </RelativeLayout>
+    </ScrollView>
+    <android.support.design.widget.BottomNavigationView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        app:menu="@menu/bottom_navigation_item_new_pw" />
+
+</RelativeLayout>

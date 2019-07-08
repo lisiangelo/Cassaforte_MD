@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.j940549.cassaforte_md">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Login_Activity"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name=".RegistratiActivity"
+            android:label="Registrati" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CambiaPassword"
+            android:label="@string/activity_cambia_pw" />
+        <activity
+            android:name=".UsoPhotoCamera.PhotoIntentActivity"
+            android:label="@string/activity_crea_icona" />
+        <activity android:name=".SplashActivity2" />
+        <activity
+            android:name=".PwPersonale.ViewRowPwPersonale"
+            android:label="@string/activity_pw_personali"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+        </activity>
+        <activity
+            android:name=".PwPersonale.ViewRowPwPersonaleGen"
+            android:label="@string/activity_pw_personali"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+        </activity>
+        <activity
+            android:name=".PwFinanza.ViewRowPwFinanza"
+            android:label="@string/activity_pw_finanziarie"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+        </activity>
+        <activity
+            android:name=".PwFinanza.ViewRowPwFinanzaGen"
+            android:label="@string/activity_pw_finanziarie"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+        </activity>
+        <activity
+            android:name=".PwLavoro.PwLavoroGen.ViewRowPwLavoro"
+            android:label="@string/activity_pw_lavoro"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+        </activity>
+        <activity
+            android:name=".PwLavoro.PwLavoroGen.ViewRowPwLavoroGen"
+            android:label="@string/activity_pw_lavoro"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+        </activity>
+        <activity
+            android:name=".PwLavoro.PwBancheDati.ViewRowPwBancheDati"
+            android:label="@string/activity_pw_lavoro"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+        </activity>
+        <activity
+            android:name=".PwLavoro.PwBancheDati.ViewRowPwBancheDatiGen"
+            android:label="@string/activity_pw_lavoro"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+        </activity>
+        <activity
+            android:name=".PwLavoro.PwGestori.ViewRowPwGestori"
+            android:label="@string/activity_pw_lavoro"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+        </activity>
+        <activity
+            android:name=".PwLavoro.PwGestori.ViewRowPwGestoriGen"
+            android:label="@string/activity_pw_lavoro"
+            android:parentActivityName=".MainActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"
+            />
+        </activity>
+        <receiver android:name="AllarmReceiver"
+            android:enabled="true"
+            android:exported="false">
+
+        </receiver>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pwpersonale"
+            android:icon="@drawable/ic_personali_white"
+            android:title="Passwords Personali" />
+        <item
+            android:id="@+id/nav_pwlavoro"
+            android:icon="@drawable/ic_lavoro_white"
+            android:title="Passwords Lavoro" />
+        <item
+            android:id="@+id/nav_pwfinanziarie"
+            android:icon="@drawable/ic_pwfinanziarie_white"
+            android:title="Passwords Finanziarie" />
+        <item
+            android:id="@+id/nav_start"
+            android:icon="@drawable/ic_home_white"
+            android:title="Home" />
+    </group>
+
+    <item android:title="Strumenti">
+        <menu>
+            <item
+                android:id="@+id/nav_backup"
+                android:icon="@drawable/ic_esegui_backup_white"
+                android:title="Esegui backup" />
+            <item
+                android:id="@+id/nav_caricabackup"
+                android:icon="@drawable/ic_ripristina_backup_white"
+                android:title="carica Backup" />
+            <item
+                android:id="@+id/nav_cambiapassword"
+                android:icon="@drawable/ic_reset_pw_white"
+                android:title="cambia password" />
+
+            <item
+                android:id="@+id/checkOnFingerprint"
+                android:icon="@drawable/ic_fp_40px"
+                android:title="Login con FingerPrint"
+                app:actionLayout="@layout/layout_switch"
+                />
+            <item
+                android:id="@+id/checkOnNotification"
+                android:icon="@drawable/ic_notifications_active_black_24dp"
+                android:title="Attiva notifiche"
+                app:actionLayout="@layout/layout_switch"
+                />
+
+        </menu>
+    </item>
+
+</menu>

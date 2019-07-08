@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/optionExport"
+        android:title="Esporta Dati"/>
+    <item android:id="@+id/optionImport"
+        android:title="Importa Dati"/>
+    <item android:id="@+id/optionCambiaPW"
+        android:title="Cambia Password"/>
+    <item android:id="@+id/optionEsci"
+        android:title="Esci"/>
+</menu>

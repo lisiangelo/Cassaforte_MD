@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nome_applicazione"
+        android:textColor="@android:color/white"
+        android:id="@+id/rowpnome_applicazione_label"
+        android:layout_alignParentLeft="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowpnome_applicazione"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/rowpnome_applicazione_label"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titolo_e_mail"
+        android:textColor="@android:color/white"
+        android:id="@+id/rowemail_label"
+        android:layout_below="@+id/rowpnome_applicazione"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowemail"
+        android:textColor="@android:color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rowemail_label"/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/titolo_nome_utente"
+    android:textColor="@android:color/white"
+    android:id="@+id/rowpnome_utente_label"
+    android:layout_below="@+id/rowemail"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowpnome_utente"
+        android:textColor="@android:color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rowpnome_utente_label"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titolo_password"
+        android:textColor="@android:color/white"
+        android:id="@+id/rowppassword_label"
+        android:layout_below="@+id/rowpnome_utente"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowppassword"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/rowppassword_label"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titolo_pin"
+        android:textColor="@android:color/white"
+        android:id="@+id/rowppin_label"
+        android:layout_below="@+id/rowppassword" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowppin"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/rowppin_label"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titolo_url"
+        android:textColor="@android:color/white"
+        android:id="@+id/row_purl_label"
+        android:layout_below="@+id/rowppin" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowpurl"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/row_purl_label"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titolo_note"
+        android:textColor="@android:color/white"
+        android:id="@+id/rowpnote_label"
+        android:layout_below="@+id/rowpurl" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowpnote"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/rowpnote_label"/>
+
+</RelativeLayout>
+    </ScrollView>
+    <android.support.design.widget.BottomNavigationView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        app:menu="@menu/bottom_navigation_item_mod_pw" />
+
+</RelativeLayout>

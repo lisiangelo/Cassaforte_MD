@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PwLavoro.FragmentPwlavoro">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs_pwlavoro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:tabBackground="@color/colorPrimary"
+        app:tabIndicatorColor="@color/colorOrange"
+        app:tabSelectedTextColor="@color/colorOrange"
+        app:tabTextColor="@android:color/white"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container_pwlavoro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabs_pwlavoro"/>
+
+</RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
